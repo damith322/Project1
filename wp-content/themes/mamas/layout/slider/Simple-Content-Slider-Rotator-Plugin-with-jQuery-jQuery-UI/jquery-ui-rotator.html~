@@ -1,0 +1,141 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+<head>
+<meta charset="utf-8">
+
+<!-- use chrome frame if installed -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>jQuery UI Rotator Demos</title>
+<link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+
+<!-- Mobile viewport optimization -->
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<!-- stylesheets -->
+<link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.1/themes/cupertino/jquery-ui.css" rel="stylesheet">
+<link rel="stylesheet" href="jquery-ui-rotator.css">
+<style>
+/* custom CSS ids and classes */
+
+
+#image-rotator { width: 405px; }
+
+#content-rotator { width: 600px; }
+
+#content-rotator .rotator-content { margin: auto 50px auto 400px; }
+
+#content-rotator .rotator-content h1 { margin: 10px 0 5px 0; }
+
+#content-rotator .rotator-content p { margin: 0; }
+
+/* custom css using plugin hooks */
+
+#content-rotator .ui-rotator {
+  background-color: #fff;
+  background-image: url("img/sprite.jpg");
+  background-repeat: no-repeat;
+  height: 165px;
+}
+
+#content-rotator .ui-rotator-1 { background-position: 0 0; }
+
+#content-rotator .ui-rotator-2 { background-position: 0 -166px; }
+
+#content-rotator .ui-rotator-3 { background-position: 0 -332px; }
+</style>
+</head>
+
+<body>
+<div id="jquery-script-menu">
+<div class="jquery-script-center">
+<ul>
+<li><a href="http://www.jqueryscript.net/rotator/Simple-Content-Slider-Rotator-Plugin-with-jQuery-jQuery-UI.html">Download This Plugin</a></li>
+<li><a href="http://www.jqueryscript.net/">Back To jQueryScript.Net</a></li>
+</ul>
+<div class="jquery-script-ads"><script type="text/javascript"><!--
+google_ad_client = "ca-pub-2783044520727903";
+/* jQuery_demo */
+google_ad_slot = "2780937993";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script></div>
+<div class="jquery-script-clear"></div>
+</div>
+</div>
+<header role="banner" style="margin-top:150px;">
+  <h1>jQuery UI Rotator Demos</h1>
+</header>
+<h2>Fade Animation (Default)</h2>
+<div id="image-rotator" data-role="rotator"> <img src="img/img1.png"> <img src="img/img2.png"> <img src="img/img3.png"> </div>
+<h2>Slide Animation</h2>
+<div id="content-rotator" data-role="rotator" data-options='{"delay": 5000, "effect": "slide"}'>
+  <section>
+    <div class="rotator-content">
+      <h1>Heading 1</h1>
+      <p>Some Content</p>
+      <button type="button">A Button</button>
+    </div>
+  </section>
+  <section>
+    <div class="rotator-content">
+      <h1>Heading 2</h1>
+      <p>Some Content</p>
+      <button type="button">A Button</button>
+    </div>
+  </section>
+  <section>
+    <div class="rotator-content">
+      <h1>Heading 1</h1>
+      <p>Some Content</p>
+      <button type="button">A Button</button>
+    </div>
+  </section>
+</div>
+<!-- rotator -->
+
+</div>
+<!-- @main -->
+
+<footer role="contentinfo"> 
+  
+  <!-- footer --> 
+  
+</footer>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> 
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.1/jquery-ui.min.js"></script> 
+
+<script defer src="jquery.ui.rotator.js"></script> 
+<script>
+    $(function() {
+      $('[data-role="rotator"]').rotator();
+
+      // other jquery ui styles
+      $('button').button();
+    });
+  </script> 
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</body>
+</html>

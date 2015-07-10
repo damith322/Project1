@@ -1,0 +1,36 @@
+/* 
+ *
+ * Authored by: Cory Dorning
+ *
+ * Last modified by: Cory Dorning
+ * Last modified on: 8/7/2014
+ *
+ * Description: 
+ *
+ */
+
+ /* plugin styles */
+.ui-rotator-content {
+  overflow: hidden;
+  position: relative;
+}
+.ui-rotator-content .ui-rotator {
+  background-color: #fff;
+  position: absolute !important;
+}
+
+.ui-rotator-toggler {
+  text-align: center;
+}
+
+.ui-rotator-toggle {
+  border-radius: 50%;
+  cursor: pointer;
+  display: inline-block;
+  height: 20px;
+  list-style: none;
+  margin-left: 20px;
+  width: 20px;
+}
+  .ui-rotator-toggle:first-child { margin-left: 0; }
+  .ui-rotator-toggle.ui-state-active { cursor: default; }

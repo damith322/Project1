@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jQuery Boilerplate</title>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/bliss-slider.css">
+    <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+	<script type="text/javascript" src="js/bliss-slider.js"></script>
+</head>
+<body><div id="jquery-script-menu">
+<div class="jquery-script-center">
+<ul>
+<li><a href="http://www.jqueryscript.net/slideshow/Tiny-Responsive-jQuery-Fade-Slider-Plugin-Bliss-Slider.html">Download This Plugin</a></li>
+<li><a href="http://www.jqueryscript.net/">Back To jQueryScript.Net</a></li>
+</ul>
+<div class="jquery-script-ads"><script type="text/javascript"><!--
+google_ad_client = "ca-pub-2783044520727903";
+/* jQuery_demo */
+google_ad_slot = "2780937993";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script></div>
+<div class="jquery-script-clear"></div>
+</div>
+</div>
+<h1 style="margin:150px auto 50px auto" align="center">jQuery Bliss Slider Plugin Basic Demo</h1>
+	<div id="slider" class="slider-container">
+		<ul class="slider">
+			<li class="slide">
+				<div class="slide-bg">
+					<img src="img/image1.jpg" alt="An Image" draggable="false">
+				</div>
+				<div class="slide-content">
+					<h2>Header 1</h2>
+					<p>An example paragraph 1</p>
+					<a href="#">Call to action 1</a>
+				</div>
+			</li>
+			<li class="slide">
+				<div class="slide-bg">
+					<img src="img/image2.jpg" alt="An Image" draggable="false">
+				</div>
+				<div class="slide-content">
+					<h2>Header 2</h2>
+					<p>An example paragraph 2</p>
+					<a href="#">Call to action 2</a>
+				</div>
+			</li>
+			<li class="slide">
+				<div class="slide-bg">
+					<img src="img/image3.jpg" alt="An Image" draggable="false">
+				</div>
+				<div class="slide-content">
+					<h2>Header 3</h2>
+					<p>An example paragraph 3</p>
+					<a href="#">Call to action 3</a>
+				</div>
+			</li>
+		</ul>
+		<div class="slider-controls">
+			<div class="slide-nav">
+				<a href="#" class="prev">Prev</a>
+				<a href="#" class="next">Next</a>
+			</div>
+			<ul class="slide-list">
+				<li><a href="#">1</a></li>
+				<li><a href="#">2</a></li>
+				<li><a href="#">3</a></li>
+			</ul>
+		</div>
+	</div>
+
+	<div id="element"></div>
+
+	<script type="text/javascript">
+		$(function() {
+			$("#slider").blissSlider({
+				auto: 1,
+      			transitionTime: 500,
+      			timeBetweenSlides: 4000
+			});
+		});
+	</script>
+
+</body>
+</html>
